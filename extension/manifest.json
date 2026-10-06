@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "知到课程连续学习助手",
+  "version": "1.0.0",
+  "description": "识别当前新形态课程，依据真实完成状态连续切换必学资源，支持暂停与停止。",
+  "content_scripts": [{
+    "matches": ["https://ai-smart-course-student-pro.zhihuishu.com/*"],
+    "js": ["helper.js"],
+    "run_at": "document_idle",
+    "all_frames": false
+  }]
+}
